@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
 
     EditText edtCaixaUm, edtCaixaDois;
     TextView resultado;
-    Button soma;
+    Button soma,subtrair;
     DecimalFormat dcf = new DecimalFormat("0");
 
     @Override
@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
         edtCaixaDois = findViewById(R.id.edtCaixaDois);
         resultado = findViewById(R.id.resultadoConta);
         soma = findViewById(R.id.soma);
+        subtrair = findViewById(R.id.subtrair);
 
 
 
@@ -40,6 +41,11 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-
-
+    public void subtrair(View view) {
+        double caixa1 = Double.parseDouble(edtCaixaUm.getText().toString());
+        double caixa2 = Double.parseDouble(edtCaixaDois.getText().toString());
+        double res = caixa1 - caixa2;
+        String valor = dcf.format(res);
+        resultado.setText(valor);
+    }
 }

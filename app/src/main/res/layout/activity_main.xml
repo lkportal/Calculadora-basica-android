@@ -52,11 +52,27 @@
         android:id="@+id/soma"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="-50dp"
+        android:layout_marginLeft="-50dp"
         android:layout_marginTop="32dp"
         android:onClick="soma"
         android:text="soma"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resultadoConta" />
+
+    <Button
+        android:id="@+id/subtrair"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-40dp"
+        android:layout_marginLeft="-40dp"
+        android:layout_marginTop="32dp"
+        android:onClick="subtrair"
+        android:text="subtrair"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.559"
+        app:layout_constraintStart_toEndOf="@+id/soma"
         app:layout_constraintTop_toBottomOf="@+id/resultadoConta" />
 </androidx.constraintlayout.widget.ConstraintLayout>
