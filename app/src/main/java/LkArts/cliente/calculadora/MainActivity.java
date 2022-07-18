@@ -48,4 +48,19 @@ public class MainActivity extends AppCompatActivity {
         String valor = dcf.format(res);
         resultado.setText(valor);
     }
+
+    public void dividir(View view ){
+        double caixa1 = Double.parseDouble(edtCaixaUm.getText().toString());
+        double caixa2 = Double.parseDouble(edtCaixaDois.getText().toString());
+        double res = caixa1 / caixa2;
+        String valor = dcf.format(res);
+        resultado.setText(valor);
+    }
+    public void multiplicar(View view ) {
+        double caixa1 = Double.parseDouble(edtCaixaUm.getText().toString());
+        double caixa2 = Double.parseDouble(edtCaixaDois.getText().toString());
+        double res = caixa1 * caixa2;
+        String valor = dcf.format(res);
+        resultado.setText(valor);
+    }
 }
